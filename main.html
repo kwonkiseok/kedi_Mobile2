@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
 <head>
@@ -20,44 +7,24 @@
 	<meta name="keywords" content="한국교육개발원, KEDI, 발간자료, 전자도서관, 영재교육, 교육통계, 방송통신교육, DB서비스, 추천사이트">
 	<title>한국교육개발원</title>
 	
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="/common/js/jquery-1.11.3.min.js"></script>
+<!--<script type="text/javascript" src="/common/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="/common/js/jquery-ui.js"></script>
 <script type="text/javascript" src="/common/js/jquery.blockUI.js"></script>
-
 <script type="text/javascript" src="/js/common-kedi.jsp" ></script>
 <script type="text/javascript" src="/js/jquery.bgiframe.min.js" ></script>
 <script type="text/javascript" src="/js/framework-2.2.2.js" ></script>
 <script type="text/javascript" src="/js/jquery-sv-0.1.js" ></script>
-
 <script type="text/javascript" src="/js/jquery.deserialize.js" ></script>
 <script type="text/javascript" src="/js/swfu/swfupload.js" ></script>
 <script type="text/javascript" src="/js/swfu/swfupload.queue.js" ></script>
 <script type="text/javascript" src="/js/swfu/fileprogress.js" ></script>
 <script type="text/javascript" src="/js/bbsbuilder/filehandlers.js" ></script>
-
-
 <script type="text/javascript" src="/js/bbsbuilder/jquery.metadata.js" ></script>
-
-
 <script type="text/javascript" src="/js/dtree.js "></script>
-
 <script type="text/javascript" src="/js/rsa/jsbn.js"></script>
 <script type="text/javascript" src="/js/rsa/rsa.js"></script>
 <script type="text/javascript" src="/js/rsa/prng4.js"></script>
 <script type="text/javascript" src="/js/rsa/rng.js"></script>
-
 <script type="text/javascript" src="/common/js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="/common/js/jquery.mCustomScrollbar.min.js"></script>
 <script type="text/javascript" src="/common/js/jquery.bxslider.min.js"></script>
@@ -66,86 +33,74 @@
 <script type="text/javascript" src="/common/js/respond.js"></script>
 <script type="text/javascript" src="/common/js/kedi.common.js"></script>
 <script type="text/javascript" src="/common/js/kedi.ui.js"></script>
-<script type="text/javascript" src="/common/js/kedi.main.js"></script>
-
-
+<script type="text/javascript" src="/common/js/kedi.main.js"></script>-->
 
 <!--[if lt IE 9]>
 <script type="text/javascript" src="/common/js/html5shiv.js"></script>
 <![endif]-->
 
-<script type="text/javascript">
-function menuAllControl(linkobj){
-	var img = jQuery(linkobj).find('img');
-	var imgSrc = jQuery(img).attr('src');
-	if(jQuery('.menuAll').is(":hidden")) {
-		jQuery(img).attr('src',imgSrc.replace('09.gif', '10.gif')); 
-		jQuery('.menuAll').show();
-	} else {
-		jQuery(img).attr('src',imgSrc.replace('10.gif', '09.gif'));
-		jQuery('.menuAll').hide();
-	}
-}
-</script>
-	
-
 	<link rel="stylesheet" href="/mobile2/common/css/jquery-ui.css">
 	<link rel="stylesheet" href="/mobile2/common/css/m.kedi.common.css">
 	<link rel="stylesheet" href="/mobile2/common/css/m.kedi.layout.css">
 	<link rel="stylesheet" href="/mobile2/common/css/m.kedi.main_swipe.css">
-	<link rel="stylesheet" href="/mobile2/common/css/swiper.css">
+	<link rel="stylesheet" href="/mobile2/common/css/swiper.min.css">
 	<script src="/mobile2/common/js/jquery-1.11.3.min.js"></script>
 	<script src="/mobile2/common/js/jquery.easing.1.3.js"></script>
 	<script src="/mobile2/common/js/jquery-ui.js"></script>
 	<script src="/mobile2/common/js/m.kedi.common.js"></script>
 	<!-- <script src="/mobile2/common/js/m.kedi.front.js"></script> -->
-	<script src="/mobile2/common/js/swiper.jquery.min.js"></script>
+	<script src="/mobile2/common/js/swiper.min.js"></script>
 	<!-- <script src="/mobile2/common/js/jquery.rwdImageMaps.js"></script> -->
 </head>
 <body>
 	<div id="wrap">
-
-	
-
-
 
 		<!-- header [s] -->
 		<div id="skipNavi">
 			<a href="#container">본문 바로가기</a>
 		</div>
 		<header id="header">
-			<div class="inner">
-				<h1 class="logo"><a href="/khome/mobile2/webhome/Home.do">한국교육개발원</a></h1>
-				<a href="#topNavi" class="btnNavi"><span class="ico_sp">전체메뉴 열기</span></a>
+			<div class="header-inner">
+				<h1 class="logo">
+					<a href="/khome/mobile2/webhome/Home.do">한국교육개발원</a>
+				</h1>
+				<a href="#navbar-side" class="btn-navbar">
+					<span>전체메뉴 열기</span>
+				</a>
+				<div class="header-search">
+					<a href="#header-search__inner" class="btn-search">통합검색</a>
+					<div id="header-search__inner" class="header-search__inner">
+						Search
+					</div>
+				</div>
+				<a href="#" class="eng">EN</a>
 			</div>
 		</header>
 		<!-- // header [e] -->
 
 		<!-- Side Menu [s] -->
-		<nav id="topNavi" data-hidden="true">
-			<div class="inner">
+    <nav id="navbar-side" class="navbar-side">
+			<div class="navbar-side__inner">
 				<h1 class="blind">메인메뉴</h1>
-				<div class="btnWrap">
-					<a href="/khome/mobile2/webhome/Home.do" class="btnClose btnBlue" title="메인화면 이동">Home</a>
-					
-						<a href="../member/loginForm.do" class="btnLogin btnGreen" title="로그인 페이지 이동">로그인</a>
-					
-
+				<div class="navbar-side__util">
+          			<span class="txt__log">로그인이 필요합니다.</span>
+					<a href="../member/loginForm.do" class="btn__log">로그인</a>
+					<a href="/khome/mobile2/webhome/Home.do" class="btn__join">회원가입</a>
 				</div>
-				<ul class="depth1">
-					<li>
-						<h2>KEDI 연구사업</h2>
-						<ul id="research" class="depth2">
-							<li>
+				<ul class="navbar-side__list">
+					<li class="active">
+						<a href="#">KEDI 연구사업</a>
+						<ul id="research" class="navbar-side__depth2">
+              				<li class="active">                                
 								<a href="/khome/mobile2/intro/listBusinessForm.do">연구사업</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/intro/listBusinessForm.do?rsPart=00">기본연구사업</a></li>
 									<li><a href="/khome/mobile2/intro/listBusinessForm.do?rsPart=01">수탁연구사업</a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="/khome/mobile2/research/listPubForm.do">연구자료</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/research/listPubForm.do">연구보고서</a></li>
 									<li><a href="/khome/mobile2/research/kediBrief.do">KEDI Brief</a></li>
 									<li><a href="/khome/mobile2/.do">교육데이터 NAVIGATION</a></li>
@@ -153,7 +108,7 @@ function menuAllControl(linkobj){
 							</li>
 							<li>
 								<a href="/khome/mobile2/journal/listEDJournalForm.do">간행물</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/journal/listEJJournalForm.do">KJEP</a></li>
 									<li><a href="/khome/mobile2/journal/listKDJournalForm.do">한국교육</a></li>
 									<li><a href="/khome/mobile2/journal/listEDJournalForm.do">교육개발</a></li>
@@ -163,11 +118,11 @@ function menuAllControl(linkobj){
 						</ul>
 					</li>
 					<li>
-						<h2>알림마당</h2>
-						<ul id="announce" class="depth2">
+            			<a href="#">알림마당</a>
+						<ul id="announce" class="navbar-side__depth2">
 							<li>
 								<a href="/khome/mobile2/announce/listNoticeAnnounceForm.do">공지사항</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/announce/listNoticeAnnounceForm.do">공지사항</a></li>
 									<li><a href="/khome/mobile2/announce/listBidAnnounceForm.do">입찰공고</a></li>
 									<li><a href="/khome/mobile2/announce/listRecruitAnnounceForm.do">채용공고</a></li>
@@ -175,7 +130,7 @@ function menuAllControl(linkobj){
 							</li>
 							<li>
 								<a href="/khome/mobile2/intro/kedici.do">홍보</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/intro/kedici.do">기관상징</a></li>
 									<li><a href="/khome/mobile2/intro/brochure.do">브로슈어</a></li>
 									<li><a href="/khome/mobile2/intro/brochure.do">뉴스레터</a></li>
@@ -184,42 +139,42 @@ function menuAllControl(linkobj){
 							</li>
 							<li>
 								<a href="/khome/mobile2/announce/listBroadAnnounceForm.do">보도자료</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/announce/listBroadAnnounceForm.do">보도자료</a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="/khome/mobile2/announce/listBroadAnnounceForm.do">행사</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/announce/listSeminarForm.do">행사안내</a></li>
 									<li><a href="/khome/mobile2/announce/listGalleryForm.do">행사갤러리</a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="/khome">50주년</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome">50주년 홈페이지</a></li>
 								</ul>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<h2>참여마당</h2>
-						<ul id="share" class="depth2">
+            			<a href="#">참여마당</a>
+						<ul id="share" class="navbar-side__depth2">
 							<li>
 								<a href="/khome/mobile2/guide/listQnaForm.do">QnA</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/guide/listQnaForm.do">QnA</a></li>
 								</ul>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<h2>KEDI 소개</h2>
-						<ul id="intro" class="depth2">
+            			<a href="#">KEDI 소개</a>
+						<ul id="intro" class="navbar-side__depth2">
 							<li>
 								<a href="/khome/mobile2/intro/greeting.do">기관소개</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/intro/greeting.do">원장인사말</a></li>
 									<li><a href="/khome/mobile2/intro/presidentProfile.do">원장약력</a></li>
 									<li><a href="/khome/mobile2/intro/managementgoal.do">기관경영목표</a></li>
@@ -228,7 +183,7 @@ function menuAllControl(linkobj){
 							</li>
 							<li>
 								<a href="/khome/mobile2/intro/purpose.do">일반현황</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/intro/purpose.do">설립목적 및 연혁</a></li>
 									<li><a href="/khome/mobile2/intro/businessplan.do">사업계획</a></li>
 									<li><a href="/khome/mobile2/intro/customerCharter.do">고객헌장</a></li>
@@ -236,14 +191,49 @@ function menuAllControl(linkobj){
 							</li>
 							<li>
 								<a href="/khome/mobile2/intro/organization.do">조직안내</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/intro/organization.do">조직도</a></li>
 									<li><a href="/khome/mobile2/intro/listStaffForm.do">직원검색</a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="/khome/mobile2/intro/map_kedi.do">찾아오시는길</a>
-								<ul class="depth3">
+								<ul class="navbar-side__depth3">
+									<li><a href="/khome/mobile2/intro/map_kedi.do">찾아오시는길</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+           				<a href="#">정보공개</a>
+						<ul id="info" class="navbar-side__depth2">
+							<li>
+								<a href="/khome/mobile2/intro/greeting.do">기관소개</a>
+								<ul class="navbar-side__depth3">
+									<li><a href="/khome/mobile2/intro/greeting.do">원장인사말</a></li>
+									<li><a href="/khome/mobile2/intro/presidentProfile.do">원장약력</a></li>
+									<li><a href="/khome/mobile2/intro/managementgoal.do">기관경영목표</a></li>
+									<li><a href="/khome/mobile2/intro/successive.do">역대원장소개</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="/khome/mobile2/intro/purpose.do">일반현황</a>
+								<ul class="navbar-side__depth3">
+									<li><a href="/khome/mobile2/intro/purpose.do">설립목적 및 연혁</a></li>
+									<li><a href="/khome/mobile2/intro/businessplan.do">사업계획</a></li>
+									<li><a href="/khome/mobile2/intro/customerCharter.do">고객헌장</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="/khome/mobile2/intro/organization.do">조직안내</a>
+								<ul class="navbar-side__depth3">
+									<li><a href="/khome/mobile2/intro/organization.do">조직도</a></li>
+									<li><a href="/khome/mobile2/intro/listStaffForm.do">직원검색</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="/khome/mobile2/intro/map_kedi.do">찾아오시는길</a>
+								<ul class="navbar-side__depth3">
 									<li><a href="/khome/mobile2/intro/map_kedi.do">찾아오시는길</a></li>
 								</ul>
 							</li>
@@ -251,8 +241,8 @@ function menuAllControl(linkobj){
 					</li>
 				</ul>
 			</div>
+      		<a href="#" class="btn-navbar__close">전체메뉴 닫기</a>
 		</nav>
-		<div id="dim"></div>
 		<!-- // Side Menu [e] -->
 <!-- LOGGER TRACKING SCRIPT V.31 FOR https://www.kedi.re.kr/khome/mobile2/webhome/Home.do / 1049 : FAIL-SAFE TYPE / DO NOT ALTER THIS SCRIPT. -->
 <!-- COPYRIGHT (C) 2002-2021 BIZSPRING INC. LOGGER(TM) ALL RIGHTS RESERVED. -->
@@ -263,650 +253,195 @@ function menuAllControl(linkobj){
 
 
 	<main id="container">
-			<div class="inner">
-				<!-- Main Visual -->
-				<div class="mainSlideWrapper swiper-container">
-					<div class="mainSlide swiper-wrapper">
-
-						<!-- Main Visual List 2019-08-09
-							PC/mobile
-						-->
-						<div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="#">
-								<img src="/mobile2/img/main/20220331_kedi_main_mobile_1.jpg" alt="2022년도 보직자 리더십 및 역량강화 교육">
-								<span class="para">
-									<span class="t1">2022년도 보직자 리더십 및 역량강화 교육</span>
-									<span class="t2">	
-										일시: 2022.03.29.(화) ~ 2022.03.30.(수)<br>
-										장소: 국가과학기술인력개발원(KIRD) 오창 본원 (오송) 					
-									</span>
-								</span>
-							</a>
-						</div>
-						<div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="#">
-								<img src="/mobile2/img/main/20220321_kedi_main_mobile_1.jpg" alt="VINES-KEDI 웨비나 개최">
-								<span class="para">
-									<span class="t1">VINES-KEDI 웨비나 개최</span>
-									<span class="t2">	
-										일시: 2022.03.16.(수) 15:00 ~ 17:00<br>
-										장소: 온라인						
-									</span>
-								</span>
-							</a>
-						</div>
-
-						<div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="#">
-								<img src="/mobile2/img/main/20211103_kedi_main_mobile_8.JPG" alt="진천교육지원청 꿈이름 ‘교육학 정책’">
-								<span class="para">
-									<span class="t1">2022년 기본연구 및 일반사업 실행계획 심의회 개최</span>
-									<span class="t2">	
-										일시: 2022.02.22.(화) ~ 2022.02.24.(목)<br>
-										장소: 1층 대회의실(140호)						
-									</span>
-								</span>
-							</a>
-						</div>
-						
-						<!-- <div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="#">
-								<img src="/mobile2/img/main/20210118_kedi_main_mobile_2.jpg" alt="과학기술정책연구원 원장(문미옥 원장님)기관 방문">
-								<span class="para">
-									<span class="t1">과학기술정책연구원 원장(문미옥 원장님)기관 방문</span>
-									<span class="t2">	
-										일시: 2022.01.18.(화) 14:00<br>
-										장소: 원장실						
-									</span>
-								</span>
-							</a>
-						</div> -->
-						<!-- <div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="#">
-								<img src="/mobile2/img/main/20211223_kedi_main_mobile_3.jpg" alt="2022년 한국교육개발원 시무식">
-								<span class="para">
-									<span class="t1">2022년 한국교육개발원 시무식</span>
-									<span class="t2">	
-										일시: 2022.01.03.(월) 10:00<br>
-										장소: 2층 영상회의실						
-									</span>
-								</span>
-							</a>
-						</div> -->
-						<!-- <div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20211223_kedi_main_mobile_4.JPG" alt="KEDI 협력학교 운영 및 괴산교육생태계 구축 업무 협약 ">
-								<span class="para">
-									<span class="t1">KEDI 협력학교 운영 및 괴산교육생태계 구축 업무 협약 </span>
-									<span class="t2">	
-										일시: 2021.12.23.(목)<br>
-										장소: 괴산증평교육지원청						
-									</span>
-								</span>
-							</a>
-						</div> -->
-						<!-- <div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20211117_kedi_main_mobile_5.jpg" alt="2021년 연구보고서 질 제고를 위한 검토회">
-								<span class="para">
-									<span class="t1">2021년 연구보고서 질 제고를 위한 검토회</span>
-									<span class="t2">	
-										일시: 2021.11.17.(수) <br>
-										장소: 1층 대회의실						
-									</span>
-								</span>
-							</a>
-						</div> -->
-						<!-- <div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20211115_kedi_main_mobile_6.jpg" alt="2021 글로벌 코리아 박람회">
-								<span class="para">
-									<span class="t1">2021 글로벌 코리아 박람회</span>
-									<span class="t2">	
-										일시: 2021.11.15.(월)	<br>
-										장소: 더케이호텔						
-									</span>
-								</span>
-							</a>
-						</div> -->
-						<!-- <div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20211111_kedi_main_mobile_7.JPG" alt="2021년도 제15회 청람교육포럼">
-								<span class="para">
-									<span class="t1">2021년도 제15회 청람교육포럼</span>
-									<span class="t2">	
-										일시: 2021.11.11.(목) 13:00~16:30<br>
-										장소: 한국교원대학교 미래도서관 청람아트홀						
-									</span>
-								</span>
-							</a>
-						</div> -->
-						
-						<!-- <div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20210525_kedi_main_mobile.jpg" alt="2021년 제1회 교육정책네트워크 교육정책 토론회">
-								<span class="para">
-									<span class="t1">2021년 제1회 교육정책네트워크 교육정책 토론회</span>
-									<span class="t2">	
-										주제: 포스트 코로나 시대, 건강한 학생 성장을 위한 심리·정서 안전망 구축<br>
-										일시: 2021.5.12.(수) 15:00 							
-									</span>
-								</span>
-							</a>
-						</div>
-						<div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20210504_kedi_main_mobile.jpg" alt="제19대 류방란 원장 취임식">
-								<span class="para">
-									<span class="t1">제19대 류방란 원장 취임식</span>
-									<span class="t2">	
-										일시: 2021.5.4.(화) 11:00<br>
-										장소: 한국교육개발원							
-									</span>
-								</span>
-							</a>
-						</div>
-						<div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20210428_kedi_main_mobile.jpg" alt="경제인문사회연구회 정해구 이사장 기관 방문">
-								<span class="para">
-									<span class="t1">경제인문사회연구회 정해구 이사장 기관 방문</span>
-									<span class="t2">	
-										일시: 2021.4.28.(수) 13:30<br>
-										장소: 한국교육개발원							
-									</span>
-								</span>
-							</a>
-						</div>
-						<div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20210223_kedi_main_mobile.jpg" alt="한국교육개발원, 코로나19 신속항원 검사 참여">
-								<span class="para">
-									<span class="t1">한국교육개발원, 코로나19 신속항원 검사 참여</span>
-									<span class="t2">	
-										일시: 2021.2.23.(화) ~24.(수)<br>
-										장소: 한국교육개발원							
-									</span>
-								</span>
-							</a>
-						</div> -->
-						<!-- <div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20210216_kedi_main_mobile.jpg" alt="KEDI-우즈베키스탄 아블로니원 업무협약 체결">
-								<span class="para">
-									<span class="t1">KEDI-우즈베키스탄 아블로니원 업무협약 체결</span>
-									<span class="t2">	
-										일시: 2021.2.9.(화)								
-									</span>
-								</span>
-							</a>
-						</div> -->
-						<!-- <div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20210127_kedi_main_mobile.jpg" alt="임호선 국회의원(증평군진천군음성) 방문">
-								<span class="para">
-									<span class="t1">임호선 국회의원(증평군진천군음성) 방문</span>
-									<span class="t2">	
-										일시: 2021.1.26.(화)<br>
-										장소: 한국교육개발원 원장실									
-									</span>
-								</span>
-							</a>
-						</div> -->
-						
-             <!-- 기존이미지 마지막두개 -->
-						<!-- <div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20210325_kedi_main_mobile_1.jpg" alt="한국교육개발원 전경">
-								<span class="para">
-									<span class="t1"></span>
-									<span class="t2">										
-									</span>
-								</span>
-							</a>
-						</div>
-						<div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20210325_kedi_main_mobile_2.jpg" alt="한국교육개발원 전경">
-								<span class="para">
-									<span class="t1"></span>
-									<span class="t2">
-									</span>
-								</span>
-							</a>
-						</div> -->
-
-						<!-- <div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20201203_kedi_main_mobile.jpg" alt="">
-								<span class="para">
-									<span class="t1">한국교육개발원 '고맙습니다 필수노동자' 캠페인 참여</span>
-									<span class="t2">
-										일시: 2020.12.3.(목)
-									</span>
-								</span>
-							</a>
-						</div> -->
-						<!-- 
-						<div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20201202_kedi_main_mobile.jpg" alt="">
-								<span class="para">
-									<span class="t1">2020년도 연구보고서 질 제고를 위한 검토회</span>
-									<span class="t2">
-										일시: 2020.12.2.(수)<br>
-										장소: 한국교육개발원 대회의실
-									</span>
-								</span>
-							</a>
-						</div>
-
-						
-						<div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20201126_kedi_main_mobile.jpg" alt="">
-								<span class="para">
-									<span class="t1">교육개발 2020년 겨울호 파워인터뷰 이정우 한국장학재단 이사장</span>
-									<span class="t2">
-										일시: 2020.11.26.(목)<br>
-										장소: 한국장학재단 서울사무소 이사장실
-									</span>
-								</span>
-							</a>
-						</div>
-						<div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20201124_kedi_main_mobile.jpg" alt="">
-								<span class="para">
-									<span class="t1">국가교육위원회 설립 방안 정책토론회</span>
-									<span class="t2">
-										일시: 2020.11.24.(화) 14:00<br>
-										장소: 유튜브 온라인 생중계
-									</span>
-								</span>
-							</a>
-						</div>
-						<div id="visualBnnr" class="visualBnnr swiper-slide">
-							<a href="">
-								<img src="/mobile2/img/main/20201113_kedi_main_mobile.jpg" alt="">
-								<span class="para">
-									<span class="t1">2020년 제4차 사회정책포럼</span>
-									<span class="t2">
-										일시: 2020.11.13.(금) 13:30<br>
-										장소: 한국방송통신대학교 열린관
-									</span>
-								</span>
-							</a>
-						</div>
-						 -->
-
-						
-						<!-- //Main Visual List 2019-08-09 -->
-
-					</div>
-					<!-- Add Pagination -->
-        			<div class="bnnrNum swiper-pagination"></div>
+		<div class="inner">
+			<!-- NEW : Main Banner -->
+			<div class="main-banner swiper-container">
+			<div class="main-banner__auto swiper-control">
+				<a href="#" class="banner__auto">메인배너 정지</a>
+			</div>
+			<div class="main-banner__paging swiper-pagination"></div>
+			<div class="main-banner__wrap swiper-wrapper">
+				<div class="main-banner__slide main-banner_01 swiper-slide">
+					<a href="#">
+						<h3 class="tit">
+							<img src="/mobile2/img/renew/main_banner_txt_01.png" alt="교육의 디지털 전환, 아직도 선택의 문제인가?" class="img_txt"/>
+						</h3>
+						<p class="issue">KEDI 브리프 2022년 1호</p>
+						<p class="manager">디지털교육연구실장 손찬희</p>
+					</a>
 				</div>
-				<!-- // Main Visual -->
-
-				<!-- KEDI 소식 -->
-				<section class="newsWrap">
-					<h2 class="tit"><img src="/mobile2/img/main/tit_section1.png" alt="KEDI 소식" /></h2>
-					<div class="newsBox">
-						<ul class="newsList">
-
-						
-						
-							<li>
-								<a href="/khome/mobile2/announce/selectAnnounceForm.do?article_sq_no=34598&amp;board_sq_no=1&amp;currentPage=1&amp;selectTp=0">
-									<span class="badge noti">공지</span>
-									<span class="txt">
-										2022년도 방송중·고 디지털 학습 콘텐츠 개발 강의교사 및 내용전문가 모집
-										
-									</span>
-									<!-- <span class="date">2017.05.05</span> -->
-								</a>
-							</li>
-						
-
-						
-
-						
-						
-							<li>
-								<a href="/khome/mobile2/announce/selectAnnounceForm.do?article_sq_no=34594&amp;board_sq_no=2&amp;currentPage=1&amp;selectTp=0">
-								<!-- <a href="#" onclick="javascript:alert('준비중입니다.');"> -->
-									<span class="badge bid">입찰</span>
-									<span class="txt">
-										(변경공고) 한국교육개발원 종전부동산 감정평가 용역
-										
-									</span>
-									<!-- <span class="date">2017.05.05</span> -->
-								</a>
-							</li>
-						
-
-						
-
-						
-							<li> <!-- &maxLinks=10&maxResults=12 -->
-								<a href="/khome/mobile2/announce/selectSeminarForm.do?clNum0=723" title="한국교육개발원 창립 50주년 기념 제180차 KEDI 교육정책포럼">
-								<!-- <a href="#" onclick="javascript:alert('준비중입니다.');"> -->
-									<span class="badge event">행사</span>
-									<span class="txt">
-										한국교육개발원 창립 50주년 기념 제180차 KEDI 교육정책포럼
-										
-									</span>
-									<!-- <span class="date">2017.05.05</span> -->
-								</a>
-							</li>
-						
-
-						
-							<li>
-								<a href="/khome/mobile/announce/selectCoronaAnnounceForm.do?article_sq_no=34583&amp;board_sq_no=51&amp;currentPage=1&amp;selectTp=0">
-								<!-- <a href="#" onclick="javascript:alert('준비중입니다.');"> -->
-									<span class="badge video">코로나</span>
-									<span class="txt">
-										[해외사례] 제421호 코로나19관련 국가별 교육 대응현황 53(2022.04.13)
-										
-									</span>
-									<!-- <span class="date">2017.05.05</span> -->
-								</a>
-							</li>
-						
-
-							<!-- <li>
-								<a href="#none">
-									<span class="badge noti">공지</span>
-									<span class="txt">글로벌교육개발협력연구실 채용</span>
-									<span class="date">2017.05.05</span>
-								</a>
-							</li> -->
-						</ul>
-					</div>
-				</section>
-				<!-- // KEDI 소식 -->
-
-				<!-- KEDI 운영사이트 -->
-				<section class="siteWrap">
-					<h2 class="tit"><img src="/mobile2/img/main/tit_section2.png" alt="KEDI 운영사이트" /></h2>
-					<div class="swiper-container">
-						<div class="siteList swiper-wrapper">
-
-							<!--// 2018-04-04-->
-							<div class="swiper-slide">
-								<ul class="row">
-									<li>
-										<a href="http://askkedi.kedi.re.kr" target="_blank" title="AskKEDI 전자도서관 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite01_04.jpg" alt="AskKEDI 전자도서관">
-										</a>
-									</li>
-									<li>
-										<a href="http://kess.kedi.re.kr/" target="_blank" title="교육통계서비스 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite03_05.jpg" alt="교육통계서비스">
-										</a>
-									</li>
-									<li>
-										<a href="http://openschool.kedi.re.kr" target="_blank" title="디지털교육연구센터 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite03_03.jpg" alt="디지털교육연구센터">
-										</a>
-									</li>
-									<li>
-										<a href="https://www.edumac.kr" target="_blank" title="교육시설환경연구센터 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite04_04.jpg" alt="교육시설환경연구센터">
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="swiper-slide">
-								<ul class="row">
-									<li>
-										<a href="http://uce.kedi.re.kr" target="_blank" title="대학역량진단센터 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite01_05.jpg" alt="대학역량진단센터">
-										</a>
-									</li>
-									
-									<li>
-										<a href="http://ged.kedi.re.kr" target="_blank" title="영재교육종합데이터베이스 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite08.jpg" alt="영재교육종합데이터베이스">
-										</a>
-									</li>
-									<li>
-										<a href="http://onlineschool.or.kr" target="_blank" title="스마트러닝 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite02_04.jpg" alt="스마트러닝">
-										</a>
-									</li>
-									<li>
-										<a href="http://edpolicy.kedi.re.kr" target="_blank" title="교육정책네트워크 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite03_01.jpg" alt="교육정책네트워크">
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="swiper-slide">
-								<ul class="row">
-									<li>
-										<a href="https://necte.kedi.re.kr" target="_blank" title="교원양성기관역량진단 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite01_06.jpg" alt="교원양성기관역량진단">
-										</a>
-									</li>
-									
-									<li>
-										<a href="http://insung.kedi.re.kr" target="_blank" title="인성교육정보센터 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite03_06.jpg" alt="인성교육정보센터">
-										</a>
-									</li>								
-									<li>
-										<a href="http://wee.go.kr" target="_blank" title="Wee센터 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite04_01.jpg" alt="Wee센터 프로젝트">
-										</a>
-									</li>
-
-									<li>
-										<a href="https://e-school.or.kr/" target="_blank" title="학생선수 e-School 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite09.jpg" alt="학생선수 e-School">
-										</a>
-									</li>
-
-								</ul>
-							</div>
-							<div class="swiper-slide">
-								<ul class="row">
-									
-									<li>
-										<a href="https://www.afterschool.go.kr" target="_blank" title="방과후학교포털시스템 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite01_03.jpg" alt="방과후학교포털시스템">
-										</a>
-									</li>
-									<li>
-										<a href="https://www.hub4u.or.kr" target="_blank" title="탈북청소년교육지원센터 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite01_02.jpg" alt="탈북청소년교육지원센터">
-										</a>
-									</li>
-									
-									<li>
-										<a href="https://edu.classon.kr/" target="_blank" title="교실온닷 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite11.jpg" alt="교실온닷"/>
-										</a>
-									</li>
-
-									<li>
-										<a href="https://forteacher.kedi.re.kr" target="_blank" title="교원치유지원센터 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite12.jpg" alt="교원치유지원센터"/>
-										</a>
-									</li>
-
-									
-								</ul>
-							</div>
-							<div class="swiper-slide">
-								<ul class="row">
-									
-									<li>
-										<a href="https://www.hscredit.kr/" target="_blank" title="고교학점제 홈페이지 새창 열기">
-											<img src="/mobile2/img/main/bnnr_kediSite31.jpg" alt="고교학점제"/>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<!-- 2018-04-04 //-->
-						</div>
-						<button type="button" class="prev"><span class="cm_sp">이전 운영사이트 배너 보기</span></button>
-						<button type="button" class="next"><span class="cm_sp">다음 운영사이트 배너 보기</span></button>
-					</div>
-					<a href="/khome/mobile2/network/listInternalSiteForm.do" class="btnMore"><span class="cm_sp">더보기</span></a>
-				</section>
-
-				<!-- // KEDI 운영사이트 -->
-
-				<!-- KEDI 발간물 -->
-				<section class="publWrap">
-					<h2 class="tit"><img src="/mobile2/img/main/tit_section3.png" alt="KEDI 간행물" /></h2>
-					<div class="journalList  swiper-container">
-						<div class="publList swiper-wrapper">
-
-						
-							<div class="swiper-slide">
-								<a href="/khome/mobile2/research/selectPubForm.do?maxLinks=10&maxResults=10&currentPage=1&plNum0=14639&tabGb=0&sort=&sortCol=&sortOp=&startDate=&endDate=&plKind=&plTitl=">
-								<!-- <div class="mlb84"> -->
-									<span class="thumb"><img src="/datafile/LuPublic/A00/000301/Images/0003010014639J.png" alt="" class="img_rs" style="max-width: 92%; height: auto; border: 2px solid rgb(220, 220, 220);"/></span>
-									<span class="cate">연구보고서</span>
-									<span class="title">2021년 스쿨포유 초등과정 콘텐츠 개발 사업 결과보고서(TR2021-59)</span>
-									<span class="info">연구책임자 : 도재우</span>
-								<!-- </div> -->
-								</a>
-							</div>
-						
-
-						
-
-						
-
-						<div class="swiper-slide">
-							
-								<a href="/khome/mobile2/research/selectTrendInternalForm.do?maxResults=7&maxLinks=5&currentPage=1&selectTp=0&isReply=0&article_sq_no=29750&acTitl=&acNum0=&srchType=1&isDocSearch=&board_sq_no=8&stored_file_type=1&doc_use_yn=N&new_disp_days=0&hot_disp_cnt=0&anony_use_yn=N&editor_use_yn=Y&prvw_use_yn=N&tabGb=0&articleSrchKwd=">
-								<div class="mlb84">
-									<span class="cate">교육동향</span>
-									<span class="title02" style="margin:5px;">
-									
-									국내 : 청소년전용 청소년관 개관
-									
-									</span>
+				<div class="main-banner__slide main-banner_01 swiper-slide">
+					<a href="#">
+						<h3 class="tit">
+							<img src="/mobile2/img/renew/main_banner_txt_01.png" alt="교육의 디지털 전환, 아직도 선택의 문제인가?" class="img_txt"/>
+						</h3>
+						<p class="issue">KEDI 브리프 2022년 1호</p>
+						<p class="manager">디지털교육연구실장 손찬희</p>
+					</a>
+				</div>
+				<div class="main-banner__slide main-banner_01 swiper-slide">
+					<a href="#">
+						<h3 class="tit">
+							<img src="/mobile2/img/renew/main_banner_txt_01.png" alt="교육의 디지털 전환, 아직도 선택의 문제인가?" class="img_txt"/>
+						</h3>
+						<p class="issue">KEDI 브리프 2022년 1호</p>
+						<p class="manager">디지털교육연구실장 손찬희</p>
+					</a>
+				</div>
+			</div>
+			</div>
+			<!-- //NEW : Main Banner -->
+        
+			<!-- NEW : 간행물 -->
+			<div class="public-banner__container">
+				<ul>
+					<li class="active">
+						<a href="#">NEW</a>
+						<div class="public-banner public-banner__01 swiper-container">
+							<button type="button" class="swiper-button-next"></button>
+							<button type="button" class="swiper-button-prev"></button>
+							<div class="public-banner__wrap swiper-wrapper">
+								<div class="public-banner__slide swiper-slide">
+									<img src="https://www.kedi.re.kr/datafile/LuPublic/A00/000301/Images/0003010014706J.PNG" alt="">
 								</div>
-								</a>
-							
-
-							
-								<a href="/khome/mobile2/research/selectTrendExternalForm.do?maxResults=7&maxLinks=5&currentPage=1&selectTp=0&isReply=0&article_sq_no=&acTitl=&acNum0=20413&srchType=1&isDocSearch=&board_sq_no=8&stored_file_type=1&doc_use_yn=N&new_disp_days=0&hot_disp_cnt=0&anony_use_yn=N&editor_use_yn=Y&prvw_use_yn=N&tabGb=1&acCode=D0060101&articleSrchKwd=">
-								<div class="mlb84">
-									<span class="title02" style="margin:5px;">
-									
-									국외 : [미국] 트럼프 정부의 교육예산안 초안
-									
-									</span>
+								<div class="public-banner__slide swiper-slide">
+									public01_2
 								</div>
-								</a>
-							
-
-							
-								<a href="/khome/mobile2/research/selectTrendEdurawForm.do?maxResults=7&maxLinks=5&currentPage=1&selectTp=0&isReply=0&article_sq_no=31260&acTitl=&acNum0=&srchType=1&isDocSearch=&board_sq_no=21&stored_file_type=1&doc_use_yn=N&new_disp_days=0&hot_disp_cnt=0&anony_use_yn=N&editor_use_yn=Y&prvw_use_yn=N&tabGb=2&articleSrchKwd=">
-								<div class="mlb84">
-									<span class="title02" style="margin:5px;">
-									
-									입법 : 「교육감 소속 지방공무원 평정규칙」일부개정령안 입법예고
-									
-									</span>
+								<div class="public-banner__slide swiper-slide">
+									public01_3
 								</div>
-								</a>
-							
+								<div class="public-banner__slide swiper-slide">
+									public01_4
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_5
+								</div>
+							</div>
 						</div>
-
-						
-
-						
-							<div class="swiper-slide">
-								<a href="/khome/mobile2/journal/selectJournalForm.do?maxLinks=10&maxResults=10&currentPage=1&plNum0=14693&plKind=ED&plTitl=">
-									<!-- <div class="mlb115"> -->
-										<span class="thumb"><img src="/datafile/LuPublic/D00/000101/Images/0001010014693J.jpg" alt="" class="img_rs" style="max-width: 92%; height: auto; border: 2px solid rgb(220, 220, 220);"/></span>
-										<span class="cate">교육개발</span>
-										<span class="title">교육개발 2022년 3월 통권 222호</span>
-										<span class="info">연구책임자 : 류방란</span>
-									<!-- </div> -->
-								</a>
+					</li>
+					<li>
+						<a href="#">연구보고서</a>
+						<div class="public-banner public-banner__02 swiper-container">
+							<button type="button" class="swiper-button-next"></button>
+							<button type="button" class="swiper-button-prev"></button>
+							<div class="public-banner__wrap swiper-wrapper">
+								<div class="public-banner__slide swiper-slide">
+									public01_1
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_2
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_3
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_4
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_5
+								</div>
 							</div>
-						
-
-						
-							<div class="swiper-slide">
-								<a href="/khome/mobile2/journal/selectJournalForm.do?maxLinks=10&maxResults=10&currentPage=1&plNum0=14508&plKind=ED&plTitl=">
-									<!-- <div class="mlb115"> -->
-										<span class="thumb"><img src="/datafile/LuPublic/D00/000101/Images/0001010014508J.jpg" alt="" class="img_rs" style="max-width: 92%; height: auto; border: 2px solid rgb(220, 220, 220);"/></span>
-										<span class="cate">한국교육</span>
-										<span class="title">한국교육 제48권 제4호</span>
-										<span class="info">연구책임자 : 류방란</span>
-									<!-- </div> -->
-								</a>
-							</div>
-						
-
-						
-							<div class="swiper-slide">
-								<a href="/khome/mobile2/journal/selectJournalForm.do?maxLinks=10&maxResults=10&currentPage=1&plNum0=14699&plKind=ED&plTitl=">
-									<!-- <div class="mlb84"> -->
-									<span class="thumb"><img src="/datafile/LuPublic/D00/038001/Images/0380010014699J.jpg" alt="" class="img_rs" style="max-width: 92%; height: auto; border: 2px solid rgb(220, 220, 220);"/></span>
-									<span class="cate">교육정책포럼</span>
-									<span class="title">교육정책포럼 2022년 통권346호</span>
-									<span class="info">연구책임자 : 류방란</span>
-									<!-- </div> -->
-								</a>
-							</div>
-						
-
-						
-							<div class="swiper-slide">
-								<a href="/khome/mobile2/journal/selectJournalForm.do?maxLinks=10&maxResults=10&currentPage=1&plNum0=14511&plKind=ED&plTitl=">
-									<!-- <div class="mlb84"> -->
-									<span class="thumb"><img src="/datafile/LuPublic/D00/000101/Images/0001010014511J.jpg" alt="" class="img_rs" style="max-width: 92%; height: auto; border: 2px solid rgb(220, 220, 220);"/></span>
-									<span class="cate">KJEP</span>
-									<span class="title">KEDI Journal of Educational Policy Vol.18 No.2 2021</span>
-									<span class="info">연구책임자 : 류방란</span>
-									<!-- </div> -->
-								</a>
-							</div>
-						
-
 						</div>
-						<button type="button" class="prev"><span class="cm_sp">이전 운영사이트 배너 보기</span></button>
-						<button type="button" class="next"><span class="cm_sp">다음 운영사이트 배너 보기</span></button>
-						<!-- <ul class="row">
-							<li>
-								<a href="#none">
-									<span class="thumb"><img src="/mobile2/img/dummy/img_journal1.jpg" alt="" /></span>
-									<span class="cate">정기간행물</span>
-									<span class="title">교육개발 2016년 12월 통권198호</span>
-									<span class="info">연구책임자 : 김재춘</span>
-								</a>
-							</li>
-						</ul> -->
-					</div>
-					<a href="/khome/mobile2/research/listPubForm.do" class="btnMore"><span class="cm_sp">더보기</span></a>
-				</section>
-				<!-- // KEDI 발간물 -->
-
-				<!-- KEDI 소개 -->
-				<section class="introWrap">
-					<h2 class="tit"><img src="/mobile2/img/main/tit_section4.png" alt="KEDI 소개" /></h2>
-					<ul class="introList">
-						<li class="item1"><a href="/khome/mobile2/intro/listGalleryForm.do" >갤러리</a></li>
-						<li class="item2"><a href="/khome/mobile2/intro/kedici.do" >기관상징</a></li>
-						<!-- <li class="item5"><a href="#" onclick="javascript:alert('준비중입니다.');">KEDI 브리프</a></li> -->
-						<li class="item5"><a href="/khome/mobile2/research/kediBrief.do" >KEDI Brief</a></li>
-						<li class="item4"><a href="/khome/mobile2/intro/brochure.do" >브로슈어</a></li>
-						<li class="item5"><a href="/khome/mobile2/intro/kediNewsLatter.do">KEDI 뉴스레터</a></li>
-					</ul>
-				</section>
-				<!-- // KEDI 소개 -->
+					</li>
+					<li>
+						<a href="#">KEDI Berief</a>
+						<div class="public-banner public-banner__03 swiper-container">
+							<button type="button" class="swiper-button-next"></button>
+							<button type="button" class="swiper-button-prev"></button>
+							<div class="public-banner__wrap swiper-wrapper">
+								<div class="public-banner__slide swiper-slide">
+									public01_1
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_2
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_3
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_4
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_5
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">교육개발</a>
+						<div class="public-banner public-banner__04 swiper-container">
+							<button type="button" class="swiper-button-next"></button>
+							<button type="button" class="swiper-button-prev"></button>
+							<div class="public-banner__wrap swiper-wrapper">
+								<div class="public-banner__slide swiper-slide">
+									public01_1
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_2
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_3
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_4
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_5
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">교육정책포럼</a>
+						<div class="public-banner public-banner__05 swiper-container">
+							<button type="button" class="swiper-button-next"></button>
+							<button type="button" class="swiper-button-prev"></button>
+							<div class="public-banner__wrap swiper-wrapper">
+								<div class="public-banner__slide swiper-slide">
+									public01_1
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_2
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_3
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_4
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_5
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">뉴스레터</a>
+						<div class="public-banner public-banner__06 swiper-container">
+							<button type="button" class="swiper-button-next"></button>
+							<button type="button" class="swiper-button-prev"></button>
+							<div class="public-banner__wrap swiper-wrapper">
+								<div class="public-banner__slide swiper-slide">
+									public01_1
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_2
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_3
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_4
+								</div>
+								<div class="public-banner__slide swiper-slide">
+									public01_5
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				</div>
+				<!-- //NEW : 간행물 -->
 			</div>
 		</main>
 
@@ -916,9 +451,6 @@ function menuAllControl(linkobj){
 		<footer id="footer">
 			<div class="inner">
 				<ul class="menu">
-				
-				
-					
 					<li><a href="/khome/mobile2/intro/map_kedi.do">오시는길</a></li>
 					<li><a href="/khome/mobile2/intro/customerCharter.do">고객헌장</a></li>
 					<li><a href="/khome/main/webhome/Home.do">PC버전</a></li>
@@ -939,56 +471,69 @@ function menuAllControl(linkobj){
 </body>
 
 <script>
-$(document).ready(function () {
-    //initialize swiper when document ready
-    /* 2017-06-08 수정_01 [s] */
-    var siteWrapSwiper = new Swiper ('.siteWrap .swiper-container', {
-    	// width : $(".siteWrap .siteList").width(), /* 2017-06-19 */
-        //height : $(".siteWrap .siteList").height(),/* 2017-06-19 */
-      loop : true,
-      autoplay: 2500,
-      autoplayDisableOnInteraction: false,
-      speed: 500
+$(document).ready(function () {  
+    
+    // 메인배너
+    const mainBanner = '.main-banner.swiper-container',
+          mainBannerPaging = '.main-banner__paging.swiper-pagination',
+          $mainBannerAuto = $(mainBanner).find('.banner__auto');
+  
+    const mainBannerSwiper = new Swiper(mainBanner, {
+      loop: true,
+      pagination: {
+        el: mainBannerPaging,
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "번 메인배너 보기</span>";
+        }
+      },
+      autoplay: {
+       delay: 4000,
+      },
+	  on: {
+		slideChange: function(swiper){
+			$(swiper.$el).find('.swiper-slide a').attr('tabindex', -1);
+			$(swiper.$el).find('.swiper-slide').eq(swiper.activeIndex).find('a').attr('tabindex', 0);
+		}
+  	  },
     });
-    /* 2017-06-08 수정_01 [e] */
-
-    $(".siteWrap .next").bind("click", function(){
-    	siteWrapSwiper.slideNext();
+    
+    $mainBannerAuto.on('click', function(e){
+      $(this).toggleClass('active');
+      $(this).hasClass('active') ? mainBannerSwiper.autoplay.stop() : mainBannerSwiper.autoplay.start();
+	  $(this).text( $(this).hasClass('active') ? '메인배너 시작' : '메인배너 정지' );
+      e.preventDefault();
     });
-
-    $(".siteWrap .prev").bind("click", function(){
-    	siteWrapSwiper.slidePrev();
-   });
-
-    var journalWrapSwiper = new Swiper ('.publWrap .swiper-container', {
-        // Optional parameters
-       // width : $(".publWrap .publList").width(),
-        loop : true,
-        height : $(".publWrap .publList").height()
+  
+    const publicObj = [{
+      'bannerName' : 'NEW',
+      'selector': '.public-banner__01',
+    }, {
+      'bannerName' : '연구보고서',
+      'selector': '.public-banner__02'
+    }, {
+      'bannerName' : 'KEDI Brief',
+      'selector': '.public-banner__03'
+    }, {
+      'bannerName' : '교육개발',
+      'selector': '.public-banner__04'
+    }, {
+      'bannerName' : '교육정책포럼',
+      'selector': '.public-banner__05'
+    }, {
+      'bannerName' : '뉴스레터',
+      'selector': '.public-banner__06'
+    }];
+    
+    $.each(publicObj, function(e, value){
+      var swiper = new Swiper(value.selector, {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 2
       });
-      $(".publWrap .next").bind("click", function(){
-    	  journalWrapSwiper.slideNext();
-      });
-
-      $(".publWrap .prev").bind("click", function(){
-    	  journalWrapSwiper.slidePrev();
-     });
-
-
-    var mainSwiper = new Swiper('.mainSlideWrapper.swiper-container', {
-        // Optional parameters
-        //width : $(".mainSlide").width(),/* 2017-06-19 */
-        //height : $(".mainSlide").height(),/* 2017-06-19 */
-        pagination: '.mainSlideWrapper .swiper-pagination',
-        effect: 'fade',
-        fade: {
-        	  crossFade: true
-        	},
-        loop : true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false,
-        speed: 500
-      })
+    });
   });
 </script>
 

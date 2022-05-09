@@ -80,3 +80,35 @@ uiFaq = function(){
 			: ($(this).parent().next($answer).stop(!0, !0).slideDown(speed).parent("li").siblings().find($answer).stop(!0, !0).slideUp(speed), $(this).parents("li").addClass("active").siblings().removeClass("active")), e.preventDefault()
 	});
 }
+
+/* 2022 New main */
+$(function(){
+  
+  // Navbar
+  const $body = $('body'),
+        $btnNavbar = $('.btn-navbar'),
+        $btnNavbarClose = $('.btn-navbar__close');
+  
+  $btnNavbar.add($btnNavbarClose).on('click', function(e){
+    $body.toggleClass('navbar-open');
+    e.preventDefault();
+  });
+  
+  // Navbar Inner
+  const $navbarList = $('.navbar-side__list'),
+        $navbarListDepth01 = $navbarList.find('> li > a'),
+        $navbarListDepth02 = $('.navbar-side__depth2').find('> li > a');
+  
+  $navbarListDepth01.on('click', function(e){
+    $(this).parent().addClass('active').siblings().removeClass('active');
+    e.preventDefault();
+  });
+  
+  $navbarListDepth02.on('click', function(e){
+    $(this).parent().find('.navbar-side__depth3').stop(false, true).slideToggle(200, function(){
+      $(this).parent().toggleClass('active');
+    });
+    e.preventDefault();
+  });
+  
+});

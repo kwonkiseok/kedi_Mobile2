@@ -5,9 +5,64 @@
  * @Date	: 2017-05-10
  */
 
+/* Font */
+@font-face { 
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+	src: url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Thin.woff2) format('woff2'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Thin.woff) format('woff'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Thin.otf) format('opentype');
+} 
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Light.woff2) format('woff2'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Light.woff) format('woff'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Light.otf) format('opentype');
+} 
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Regular.woff2) format('woff2'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Regular.woff) format('woff'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Regular.otf) format('opentype');
+} 
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Medium.woff2) format('woff2'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Medium.woff) format('woff'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Bold.woff2) format('woff2'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Bold.woff) format('woff'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Bold.otf) format('opentype');
+} 
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 900;
+	src: url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Black.woff2) format('woff2'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Black.woff) format('woff'),
+	url(/mobile2/common/fonts/NotoSansKR/NotoSansKR-Black.otf) format('opentype');
+} 
+
 /* Reset */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;background:transparent}
-body{min-width:320px;font-size:12px;font-family:"Apple Gothic", "Nanum Gothic", "나눔고딕", "돋움", dotum;color:#4c4c4c;line-height:1.4}
+body{min-width:320px;font-size:12px;font-family:"Apple Gothic", "Noto Sans KR", "Nanum Gothic", "나눔고딕", "돋움", dotum;color:#4c4c4c;line-height:1.4}
 ul,ol{list-style:none}
 blockquote,q{quotes:none}
 pre{display:inline-block}

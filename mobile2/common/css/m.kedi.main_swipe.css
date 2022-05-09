@@ -139,3 +139,26 @@
 .introList li.item3 a:before{background-position:0 -102px}
 .introList li.item4 a:before{background-position:0 -153px}
 .introList li.item5 a:before{background-position:0 -204px}
+
+/* 2022 New Main */
+.main-banner { overflow: hidden; position: relative; }
+.main-banner .main-banner__slide { height: 60.833333vw; box-sizing: border-box; }
+.main-banner .main-banner_01 { background: url(/mobile2/img/renew/main_banner_bg_01.png) no-repeat 0 0; background-size: cover; position: relative; }
+.main-banner .main-banner_01 .tit > img { width: auto; height: 13.888889vw; vertical-align: top; }
+.main-banner .main-banner_01 .issue { font-size: 3.888889vw; padding-top: 3.055556vw; color: #000; line-height: 1; }
+.main-banner .main-banner_01 .manager { font-size: 3.333333vw; padding-top: 5vw; color: rgba(0,0,0,.48); line-height: 1; }
+.main-banner .main-banner_01 a { display: block; padding: 8.333333vw 5vw; height: 100%; box-sizing: border-box; }
+.main-banner .banner__auto { width: 12px; height: 11px; position: absolute; left: 5.555556vw; bottom: 4.166667vw; z-index: 10; text-indent: -5000px; overflow: hidden; }
+.main-banner .banner__auto::before {content: ''; background: url(/mobile2/img/renew/iconset_renew.png) -1px -118px; width: 7px; height: 11px; display: block; background-size: 250px; margin: 0 auto; }
+.main-banner .banner__auto.active::before { background-position: -23px -118px; width: 9px; height: 10px; }
+.main-banner .main-banner__paging { width: auto !important; left: calc(5.555556vw + 12px) !important; bottom: 4.166667vw !important; } 
+.main-banner .main-banner__paging .swiper-pagination-bullet { width: 11px; height: 11px; margin: 0 2px !important; background-color: #b0eab6; opacity: 1; transition: all .3s ease; text-indent: -5000px; border-radius: 6px; }
+.main-banner .main-banner__paging .swiper-pagination-bullet-active { width: 41px; background-color: #39b044; }
+.main-banner .main-banner__paging .swiper-pagination-bullet:focus { outline: 1px solid #000; }
+
+.public-banner__container > ul { position: relative; overflow: hidden; display: flex; flex-wrap: wrap; padding-bottom: 200px; }
+.public-banner__container > ul > li { flex: 0 0 33.33333%; }
+.public-banner__container > ul > li.active .public-banner { display: block; }
+.public-banner__container > ul > li > a { display: block; height: 25px; line-height: 25px; text-align: center; box-sizing: border-box; }
+.public-banner { overflow: hidden; position: absolute; background-color: #fafafa; display: none; top: 50px; left: 0; right: 0; }
+.public-banner .swiper-slide { min-height: 200px; }

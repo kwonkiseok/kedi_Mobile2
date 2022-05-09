@@ -776,3 +776,41 @@ div[aria-hidden="true"]{display:none !important}
 .charter .charterList h4{font-size:1rem; color:#000;}
 .charter .charterList p{font-size: 12px;}
 /* 2017-12-18 추가 (e) */
+
+/* 2022 New Main */
+#header .header-inner { position: relative; padding: 0 15px; height: 50px; }
+#header .header-inner .logo a{ display: block; width: 148px; height: 25px; text-indent: -5000px; background:url(/mobile2/img/renew/logo_renew.png) no-repeat 0 0; background-size: 148px 25px;}
+#header .btn-navbar { position: absolute; top: 50%; left: 10px; width: 25px; height: 25px; overflow: hidden; margin-top: -13px; }
+#header .btn-navbar::before { content: ''; display: block; background: url(/mobile2/img/renew/iconset_renew.png) 0 -51px; width: 24px; height: 24px; background-size: 250px; margin: 0 auto; }
+#header .btn-navbar > span { position: absolute; text-indent: -5000px; white-space: nowrap; display: block; }
+#header .btn-search { width: 25px; height: 25px; position: absolute; top: 50%; right: 45px; overflow: hidden; margin-top: -13px; }
+#header .btn-search::before { content: ''; display: block; background: url(/mobile2/img/renew/iconset_renew.png) 0 -84px; width: 24px; height: 25px; background-size: 250px; margin: 0 auto; }
+#header .header-search__inner { display: none; }
+#header .eng { width: 23px; height: 23px; position: absolute; top: 50%; right: 15px; display: flex; align-items: center; justify-content: center; font-size: .75rem; color: #fff; background-color: #26519c; font-weight: 700; border-radius: 50%; margin-top: -12px; }
+.navbar-side { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #fff; transform: translate3d(-100%, 0, 0); transition-duration: .3s; transition-property: opacity, visibility, transform; z-index: 1000; }
+body.navbar-open { overflow: hidden; }
+body.navbar-open .navbar-side { transform: translateZ(0); opacity: 1; visibility: visible; }
+.navbar-side__inner { height: 100%; }
+.navbar-side .btn-navbar__close { position: absolute; top: 13px; right: 16px; width: 26px; height: 26px; text-indent: -5000px; overflow: hidden; }
+.navbar-side .btn-navbar__close::before{ content: ''; width: 24px; height: 24px; display: block; background: url(/mobile2/img/renew/iconset_renew.png) no-repeat 0 0; background-size: 250px; margin: 1px auto; }
+.navbar-side__util { display: flex; background-color: #1053a5; height: 50px; padding: 0 15px; align-items: center; }
+.navbar-side__util .txt__log { font-size: .938rem; margin-right: 10px; font-weight: 400; color: #fff; }
+.navbar-side__util .btn__log,
+.navbar-side__util .btn__join { font-size: .875rem; margin-right: 5px; color: #fff; font-weight: 400; height: 25px; line-height: 25px; padding: 0 10px; }
+.navbar-side__util .btn__log { background-color: #00a1e9; }
+.navbar-side__util .btn__join { background-color: #1e2c5b; }
+.navbar-side__list { position: relative; background-color: #e8e8e8; height: calc( 100% - 50px ); }
+.navbar-side__list > li > a { display: block; font-size: .875rem; color: #3d3d3d; width: 125px; height: 50px; line-height: 50px; text-align: center; box-sizing: border-box; border-top: 1px solid #fff; transition: background-color .2s ease; }
+.navbar-side__list > li.active > a { background-color: #fff; color: #1053a5; font-weight: 700; }
+.navbar-side__list > li:first-child > a { border-top-color: transparent; }
+.navbar-side__list .navbar-side__depth2 { position: absolute; top: 0; left: 125px; bottom: 0; right: 0; background-color: #fff; padding: 5px 20px 20px; overflow: hidden auto; display: none; }
+.navbar-side__list > li.active .navbar-side__depth2 { display: block; } 
+.navbar-side__list .navbar-side__depth2 > li { border-bottom: 1px solid rgba(0,0,0,.23); }
+.navbar-side__list .navbar-side__depth2 > li > a { display: block; font-size: .875rem; padding: 15px 0; line-height: 1; color: #000; position: relative; transition: all .2s linear; }
+.navbar-side__list .navbar-side__depth2 > li > a::before { content: ''; position: absolute; top: 50%; right: 0; background: url(/mobile2/img/renew/iconset_renew.png) no-repeat 0 -33px; width: 16px; height: 9px; background-size: 250px; margin-top: -4.5px; transition: transform .2s ease; }
+.navbar-side__list .navbar-side__depth2 > li.active > a { font-weight: 700; }
+.navbar-side__list .navbar-side__depth2 > li.active > a::before { transform: rotate(180deg); }
+.navbar-side__list .navbar-side__depth2 > li.active .navbar-side__depth3 { display: block; }
+.navbar-side__list .navbar-side__depth3 { background-color: #eaeef5; padding: 10px; border-top: 1px solid rgba(0,0,0,.23); display: none; }
+.navbar-side__list .navbar-side__depth3 > li > a { display: block; padding: 3px 0; }
+/* //2022 New Main */
