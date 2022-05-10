@@ -785,7 +785,17 @@ div[aria-hidden="true"]{display:none !important}
 #header .btn-navbar > span { position: absolute; text-indent: -5000px; white-space: nowrap; display: block; }
 #header .btn-search { width: 25px; height: 25px; position: absolute; top: 50%; right: 45px; overflow: hidden; margin-top: -13px; }
 #header .btn-search::before { content: ''; display: block; background: url(/mobile2/img/renew/iconset_renew.png) 0 -84px; width: 24px; height: 25px; background-size: 250px; margin: 0 auto; }
-#header .header-search__inner { display: none; }
+#header .header-search__inner { display: none; position: absolute; top: 50px; left: 0; right: 0; background-color: #fff; z-index: 10; box-sizing: border-box; transition: border .3s ease; padding: 17px 15px 15px; border-top: 1px solid transparent; border-bottom: 1px solid transparent; }
+#header .header-search__inner.active { border-top: 1px solid rgba(233,233,233,.5); border-bottom: 1px solid #26519c; }
+#header .header-search__input { display: flex; padding-bottom: 7px; border-bottom: 2px solid #26519c; }
+#header .header-search__input input { height: 30px; flex: 1; margin-right: 5px; outline: 0; border: 0; font-size: .875rem; color: #000; }
+#header .header-search__input input::placeholder { font-size: .875rem; color: #b2b2b2; }
+#header .header-search__input button { color: #fff; font-size: .875rem; width: 80px; height: 30px; background-color: #26519c; border-radius: 15px; }
+#header .header-search__favorite { display: flex; padding-top: 8px; }
+#header .header-search__favorite > h3 { margin-right: 10px; white-space: nowrap; font-size: .688rem; color: #000; }
+#header .header-search__favorite > ul { display: flex; flex-wrap: wrap; }
+#header .header-search__favorite > ul > li { margin: 0 10px 5px 0; }
+#header .header-search__favorite > ul > li > a { color: #00a1e9; }
 #header .eng { width: 23px; height: 23px; position: absolute; top: 50%; right: 15px; display: flex; align-items: center; justify-content: center; font-size: .75rem; color: #fff; background-color: #26519c; font-weight: 700; border-radius: 50%; margin-top: -12px; }
 .navbar-side { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #fff; transform: translate3d(-100%, 0, 0); transition-duration: .3s; transition-property: opacity, visibility, transform; z-index: 1000; }
 body.navbar-open { overflow: hidden; }
@@ -805,12 +815,30 @@ body.navbar-open .navbar-side { transform: translateZ(0); opacity: 1; visibility
 .navbar-side__list > li:first-child > a { border-top-color: transparent; }
 .navbar-side__list .navbar-side__depth2 { position: absolute; top: 0; left: 125px; bottom: 0; right: 0; background-color: #fff; padding: 5px 20px 20px; overflow: hidden auto; display: none; }
 .navbar-side__list > li.active .navbar-side__depth2 { display: block; } 
-.navbar-side__list .navbar-side__depth2 > li { border-bottom: 1px solid rgba(0,0,0,.23); }
+.navbar-side__list .navbar-side__depth2 > li { border-bottom: 1px solid rgba(210,210,210,.5); }
 .navbar-side__list .navbar-side__depth2 > li > a { display: block; font-size: .875rem; padding: 15px 0; line-height: 1; color: #000; position: relative; transition: all .2s linear; }
-.navbar-side__list .navbar-side__depth2 > li > a::before { content: ''; position: absolute; top: 50%; right: 0; background: url(/mobile2/img/renew/iconset_renew.png) no-repeat 0 -33px; width: 16px; height: 9px; background-size: 250px; margin-top: -4.5px; transition: transform .2s ease; }
+.navbar-side__list .navbar-side__depth2 > li > a::before { content: ''; position: absolute; top: 50%; right: 0; background: url(/mobile2/img/renew/iconset_renew.png) no-repeat 0 -33px; width: 16px; height: 9px; background-size: 250px; margin-top: -4.5px; transition: transform .2s ease; transform: rotate(180deg); }
 .navbar-side__list .navbar-side__depth2 > li.active > a { font-weight: 700; }
-.navbar-side__list .navbar-side__depth2 > li.active > a::before { transform: rotate(180deg); }
+.navbar-side__list .navbar-side__depth2 > li.active > a::before { transform: rotate(0); }
 .navbar-side__list .navbar-side__depth2 > li.active .navbar-side__depth3 { display: block; }
 .navbar-side__list .navbar-side__depth3 { background-color: #eaeef5; padding: 10px; border-top: 1px solid rgba(0,0,0,.23); display: none; }
 .navbar-side__list .navbar-side__depth3 > li > a { display: block; padding: 3px 0; }
+
+#footer .footer-inner { padding-bottom: 17px; }
+#footer .footer-inner .footer-menu { display: flex; align-items: center; padding: 7px 21px; justify-content: space-around; border-bottom: 1px solid rgba(227,227,227,.5); }
+#footer .footer-inner .footer-menu a { display: block; padding: 5px 0; text-align: center; font-weight: 400; font-size: .75rem; color: #000; }
+#footer .footer-inner .footer-menu .active a { color: #db5434; }
+#footer .footer-inner .footer-social { display: flex; padding: 11px 20px 8px; }
+#footer .footer-inner .footer-logo { height: 23px; width: auto; }
+#footer .footer-inner .footer-sns { margin-left: auto; display: flex; align-items: center; }
+#footer .footer-inner .footer-sns > li { margin-left: 6px; }
+#footer .footer-inner .footer-sns a { display: block; width: 30px; height: 30px; background: url(/mobile2/img/renew/iconset_renew.png) no-repeat 0 0; background-size: 250px; color: transparent; text-indent: -5000px; }
+#footer .footer-inner .footer-sns .fb a { background-position: -27px -25px; }
+#footer .footer-inner .footer-sns .is a { background-position: -63px -25px; }
+#footer .footer-inner .footer-sns .yt a { background-position: -99px -25px; }
+#footer .footer-inner .footer-addr { padding: 8px 20px 0; }
+#footer .footer-inner .footer-addr address { color: #000; font-size: .75rem; line-height: 1; margin: 0; }
+#footer .footer-inner .footer-addr .contact { color: #000; font-size: .75rem; line-height: 1; margin: 6px 0 0; white-space: nowrap; }
+#footer .footer-inner .footer-addr .copy { color: #999; font-size: .625rem; line-height: 1; margin: 6px 0 0; }
+
 /* //2022 New Main */

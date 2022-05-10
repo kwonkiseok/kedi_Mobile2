@@ -111,4 +111,13 @@ $(function(){
     e.preventDefault();
   });
   
+  // Search
+  const $btnSearch = $('#header .btn-search'),
+        $searchInner = $('#header .header-search__inner');
+  
+  $btnSearch.on('click', function(e){
+    $searchInner.stop(false, true).slideToggle(300).toggleClass('active');
+    e.preventDefault();
+  });
+  
 });

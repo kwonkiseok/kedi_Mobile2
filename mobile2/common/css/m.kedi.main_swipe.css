@@ -141,8 +141,10 @@
 .introList li.item5 a:before{background-position:0 -204px}
 
 /* 2022 New Main */
+.hidden__txt { border: 0; clip: rect(0 0 0 0); clip-path: inset(50%); width: 1px; height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; left: -5000px; }
 .main-banner { overflow: hidden; position: relative; }
 .main-banner .main-banner__slide { height: 60.833333vw; box-sizing: border-box; }
+.main-banner .main-banner__slide a:focus { box-shadow: inset 0 0 3px -1px #000; }
 .main-banner .main-banner_01 { background: url(/mobile2/img/renew/main_banner_bg_01.png) no-repeat 0 0; background-size: cover; position: relative; }
 .main-banner .main-banner_01 .tit > img { width: auto; height: 13.888889vw; vertical-align: top; }
 .main-banner .main-banner_01 .issue { font-size: 3.888889vw; padding-top: 3.055556vw; color: #000; line-height: 1; }
@@ -154,11 +156,123 @@
 .main-banner .main-banner__paging { width: auto !important; left: calc(5.555556vw + 12px) !important; bottom: 4.166667vw !important; } 
 .main-banner .main-banner__paging .swiper-pagination-bullet { width: 11px; height: 11px; margin: 0 2px !important; background-color: #b0eab6; opacity: 1; transition: all .3s ease; text-indent: -5000px; border-radius: 6px; }
 .main-banner .main-banner__paging .swiper-pagination-bullet-active { width: 41px; background-color: #39b044; }
-.main-banner .main-banner__paging .swiper-pagination-bullet:focus { outline: 1px solid #000; }
+.main-banner .main-banner__paging .swiper-pagination-bullet:focus { box-shadow: inset 0 0 3px -1px #000; }
 
-.public-banner__container > ul { position: relative; overflow: hidden; display: flex; flex-wrap: wrap; padding-bottom: 200px; }
+.year-banner { overflow: hidden; position: relative; }
+.year-banner .year-banner__slide { height: 53.055556vw; box-sizing: border-box; }
+.year-banner .year-banner__slide a { display: block; position: relative; height: 53.055556vw; }
+.year-banner .year-banner__slide a:focus::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; box-shadow: inset 0 0 3px -1px #000; }
+.year-banner .year-banner__slide a > img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+.year-banner .banner__auto { width: 12px; height: 11px; position: absolute; left: 5.555556vw; bottom: 4.166667vw; z-index: 10; text-indent: -5000px; overflow: hidden; }
+.year-banner .banner__auto::before {content: ''; background: url(/mobile2/img/renew/iconset_renew.png) -1px -118px; width: 7px; height: 11px; display: block; background-size: 250px; margin: 0 auto; }
+.year-banner .banner__auto.active::before { background-position: -23px -118px; width: 9px; height: 10px; }
+.year-banner .year-banner__paging { width: auto !important; left: calc(5.555556vw + 12px) !important; bottom: 4.166667vw !important; } 
+.year-banner .year-banner__paging .swiper-pagination-bullet { width: 11px; height: 11px; margin: 0 2px !important; background-color: #ffc9b6; opacity: 1; transition: all .3s ease; text-indent: -5000px; border-radius: 6px; }
+.year-banner .year-banner__paging .swiper-pagination-bullet-active { width: 41px; background-color: #e74d17; }
+.year-banner .year-banner__paging .swiper-pagination-bullet:focus { box-shadow: inset 0 0 3px -1px #000; }
+
+.edu-banner { overflow: hidden; position: relative; }
+.edu-banner .edu-banner__slide { height: 31.388889vw; box-sizing: border-box; }
+.edu-banner .edu-banner__slide a { display: block; position: relative; height: 31.388889vw; }
+.edu-banner .edu-banner__slide a:focus::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; box-shadow: inset 0 0 3px -1px #000; }
+.edu-banner .edu-banner__slide a > img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+.edu-banner .banner__auto { width: 12px; height: 11px; position: absolute; left: 5.555556vw; bottom: 4.166667vw; z-index: 10; text-indent: -5000px; overflow: hidden; }
+.edu-banner .banner__auto::before {content: ''; background: url(/mobile2/img/renew/iconset_renew.png) -1px -118px; width: 7px; height: 11px; display: block; background-size: 250px; margin: 0 auto; }
+.edu-banner .banner__auto.active::before { background-position: -23px -118px; width: 9px; height: 10px; }
+.edu-banner .edu-banner__paging { width: auto !important; left: calc(5.555556vw + 12px) !important; bottom: 4.166667vw !important; } 
+.edu-banner .edu-banner__paging .swiper-pagination-bullet { width: 11px; height: 11px; margin: 0 2px !important; background-color: #fff; opacity: 1; transition: all .3s ease; text-indent: -5000px; border-radius: 6px; }
+.edu-banner .edu-banner__paging .swiper-pagination-bullet-active { width: 41px; background-color: #4066a8; }
+.edu-banner .edu-banner__paging .swiper-pagination-bullet:focus { box-shadow: inset 0 0 3px -1px #000; }
+
+.public-banner__container { padding: 30px 0 0; }
+.public-banner__container .public-tit { font-size: 1.375rem; font-weight: 700; line-height: 1; display: flex;  align-items: flex-end; padding: 0 0 15px 20px; white-space: nowrap; color: #000; }
+.public-banner__container .public-tit > small { font-size: .75rem; color: #666; font-weight: 400; margin-left: 8px; }
+.public-banner__container > ul { position: relative; overflow: hidden; display: flex; flex-wrap: wrap; padding: 0 20px calc(50.833333vw + 105px) 20px; }
 .public-banner__container > ul > li { flex: 0 0 33.33333%; }
-.public-banner__container > ul > li.active .public-banner { display: block; }
-.public-banner__container > ul > li > a { display: block; height: 25px; line-height: 25px; text-align: center; box-sizing: border-box; }
-.public-banner { overflow: hidden; position: absolute; background-color: #fafafa; display: none; top: 50px; left: 0; right: 0; }
-.public-banner .swiper-slide { min-height: 200px; }
+.public-banner__container > ul > li > a { display: block; height: 25px; line-height: 25px; text-align: center; box-sizing: border-box; font-size: .875rem; background-color: #adb4c1; color: #fff; margin: 1px 1px 0 0; }
+.public-banner__container > ul > li.active > a { background-color: #1053a5; }
+.public-banner__container .public-banner { overflow: hidden; position: absolute; display: none; top: 52px; left: 0; right: 0; padding: 18px 23px 30px 23px; }
+.public-banner__container .active .public-banner { display: block; }
+.public-banner .swiper-slide { min-height: 232px; box-shadow: 0px 3px 17px 2px rgba(0,0,0, .1); transition: opacity .2s ease; opacity: 0; }
+.public-banner .swiper-slide.swiper-slide-visible { opacity: 1; }
+.public-banner .public-thumb { padding: 4.444444vw 3.333333vw 0; height: 46.388889vw; }
+.public-banner .public-thumb > img { display: block; width: 100%; height: 100%; margin: 0 auto; }
+.public-banner .public-txt { font-size: .875rem; color: #000; line-height: .938rem; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; word-break: break-all; word-wrap: break-word; margin: 13px 12px; min-height: 30px; }
+.public-banner .swiper-button-next, 
+.public-banner .swiper-button-prev { text-indent: -5000px; width: 32px; height: 32px; background-color: #fff; box-shadow: 0px 3px 17px 2px rgba(0,0,0,.1); border-radius: 50%; overlfow: hidden; white-space: nowrap; }
+.public-banner .swiper-button-next { right: 2px; }
+.public-banner .swiper-button-prev { left: 2px; }
+.public-banner .swiper-button-next::after,
+.public-banner .swiper-button-prev::after { content: none; }
+.public-banner .swiper-button-next::before,
+.public-banner .swiper-button-prev::before { content: ''; background: url(/mobile2/img/renew/iconset_renew.png) 0 -138px; width: 18px; height: 16px; display: block; background-size: 250px; margin: 0 auto; }
+.public-banner .swiper-button-next::before { transform: rotate(180deg); }
+.public-banner .swiper-button-next > span, 
+.public-banner .swiper-button-prev > span { border: 0; clip: rect(0 0 0 0); clip-path: inset(50%); width: 1px; height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; left: -5000px; }
+.public-banner .swiper-button-next.swiper-button-disabled,
+.public-banner .swiper-button-prev.swiper-button-disabled { display: none; }
+.public-banner .public-thumb > p { font-size: 3.888889vw; font-weight: 400; color: #000; line-height: 5vw; position: absolute; top: 12.5vw; left: 0; right: 0; padding: 0 5.555556vw; height: 17.777778vw; display: flex; align-items: center; justify-content: center; text-align: center; }
+.public-banner .public-thumb > p > span { text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; word-wrap: break-word; }
+
+.issue-banner__container { padding: 0; }
+.issue-banner__container .issue-tit { font-size: 1.375rem; font-weight: 700; line-height: 1; display: flex;  align-items: flex-end; padding: 0 0 15px 20px; white-space: nowrap; color: #000; }
+.issue-banner__container .issue-tit > small { font-size: .75rem; color: #666; font-weight: 400; margin-left: 8px; }
+.issue-banner__container .issue-banner { position: relative; padding: 0 23px 30px; overflow: hidden; }
+.issue-banner__container .issue-banner .swiper-slide { min-height: 155px; transition: opacity .2s ease; opacity: 0; background-color: #f3f3f3; }
+.issue-banner__container .issue-banner .swiper-slide.swiper-slide-visible { opacity: 1; }
+.issue-banner__container .issue-banner .swiper-slide a { display: block; position: relative; padding: 33px 14px 13px; }
+.issue-banner__container .issue-banner .swiper-button-next, 
+.issue-banner__container .issue-banner .swiper-button-prev { text-indent: -5000px; width: 32px; height: 32px; background-color: #fff; box-shadow: 0px 3px 17px 2px rgba(0,0,0,.1); border-radius: 50%; }
+.issue-banner__container .issue-banner .swiper-button-next { right: 2px; }
+.issue-banner__container .issue-banner .swiper-button-prev { left: 2px; }
+.issue-banner__container .issue-banner .swiper-button-next::after,
+.issue-banner__container .issue-banner .swiper-button-prev::after { content: none; }
+.issue-banner__container .issue-banner .swiper-button-next::before,
+.issue-banner__container .issue-banner .swiper-button-prev::before { content: ''; background: url(/mobile2/img/renew/iconset_renew.png) 0 -138px; width: 18px; height: 16px; display: block; background-size: 250px; margin: 0 auto; }
+.issue-banner__container .issue-banner .swiper-button-next::before { transform: rotate(180deg); }
+.issue-banner__container .issue-banner .swiper-button-next > span, 
+.issue-banner__container .issue-banner .swiper-button-prev > span { border: 0; clip: rect(0 0 0 0); clip-path: inset(50%); width: 1px; height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; left: -5000px; }
+.issue-banner__container .swiper-button-next.swiper-button-disabled,
+.issue-banner__container .swiper-button-prev.swiper-button-disabled { display: none; }
+.issue-banner__container .issue-banner .issue-info { position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: flex-end; }
+.issue-banner__container .issue-banner .issue-badge { font-size: .688rem; color: #fff; padding: 3px 10px;}
+.issue-banner__container .issue-banner .issue-badge.r { background-color: #2b8224; }
+.issue-banner__container .issue-banner .issue-badge.c { background-color: #00a1e9; }
+.issue-banner__container .issue-banner .issue-badge.d { background-color: #238d84; }
+.issue-banner__container .issue-banner .issue-date { margin: 0 8px 0 auto; font-size: .75rem; color: #979797; }
+.issue-banner__container .issue-banner .issue-stit { font-size: 1rem; line-height: 1.125rem; font-weight: 700; color: #000; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; word-break: break-all; word-wrap: break-word; margin-bottom: 10px; min-height: 36px; }
+.issue-banner__container .issue-banner .issue-txt { font-size: .75rem; line-height: .875rem; font-weight: 400; color: #000; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; word-break: break-all; min-height: 70px; }
+
+.notice-wrap { padding: 30px 20px 0; background-color: #f5f5f5; position: relative; }
+.notice-wrap .notice-tit { font-size: 1.375rem; line-height: 1; color: #000; font-weight: 700; padding: 0 3px; }
+.notice-wrap .notice-list { margin-top: 15px; border-top: 2px solid #fd7d00; }
+.notice-wrap .notice-list > li { border-top: 1px solid rgba(233,233,233, .5); }
+.notice-wrap .notice-list > li > a { padding: 13px 11px; background-color: #fff; display: block; }
+.notice-wrap .notice-list .notice-date { display: flex; margin-bottom: 5px; font-size: .75rem; color: #999; align-items: center; }
+.notice-wrap .notice-list .notice-new { width: 16px; height: 16px; display: inline-flex; color: #fff; font-weight: 500; font-style: normal; background-color: #d33131; border-radius: 50%; align-items: center; justify-content: center; margin-left: 5px; }
+.notice-wrap .notice-list .notice-stit { font-size: .875rem; color: #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 700; }
+.notice-wrap .notice-list .notice-badge { color: #fd4d00; }
+.notice-wrap .notice-more { width: 30px; height: 30px; position: absolute; top: 25px; right: 20px; border: 1px solid rgba(179,179,179,.5); display: flex; align-items: center; justify-content: center; }
+.notice-wrap .notice-more::before { content: ''; width: 16px; height: 15px;  background: url(/mobile2/img/renew/iconset_renew.png) -33px 0; background-size: 250px; }
+.notice-wrap .notice-more > span { border: 0; clip: rect(0 0 0 0); clip-path: inset(50%); width: 1px; height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; left: -5000px; }
+
+.event-wrap { padding: 25px 20px 0; background-color: #f5f5f5; position: relative; }
+.event-wrap .event-tit { font-size: 1.375rem; line-height: 1; color: #000; font-weight: 700; padding: 0 3px; }
+.event-wrap .event-list { margin-top: 15px; border-top: 2px solid #fd4d00; }
+.event-wrap .event-list > li { border-top: 1px solid rgba(233,233,233, .5); }
+.event-wrap .event-list > li > a { padding: 13px 11px; background-color: #fff; display: block; }
+.event-wrap .event-list .event-date { display: flex; margin-bottom: 5px; font-size: .75rem; color: #fd4d00; align-items: center; }
+.event-wrap .event-list .event-new { width: 16px; height: 16px; display: inline-flex; color: #fff; font-weight: 500; font-style: normal; background-color: #d33131; border-radius: 50%; align-items: center; justify-content: center; margin-left: 5px; }
+.event-wrap .event-list .event-stit { font-size: .875rem; color: #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 700; }
+.event-wrap .event-more { width: 30px; height: 30px; position: absolute; top: 20px; right: 20px; border: 1px solid rgba(179,179,179,.5); display: flex; align-items: center; justify-content: center; }
+.event-wrap .event-more::before { content: ''; width: 16px; height: 15px;  background: url(/mobile2/img/renew/iconset_renew.png) -33px 0; background-size: 250px; }
+.event-wrap .event-more > span { border: 0; clip: rect(0 0 0 0); clip-path: inset(50%); width: 1px; height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; left: -5000px; }
+
+.site-wrap { padding: 30px 20px 25px; background-color: #f5f5f5; position: relative; }
+.site-wrap .site-tit { font-size: 1.375rem; line-height: 1; color: #000; font-weight: 700; padding: 0 3px; }
+.site-wrap .site-list { display: flex; flex-wrap: wrap; margin: 17px -2px 0; }
+.site-wrap .site-list > li { width: 50%; flex: 0 0 50%; }
+.site-wrap .site-list > li > a { display: flex; margin: 2px; background-color: #fff; padding: 0 10px; align-items: center; height: 51px; }
+.site-wrap .site-list .ico { min-width: 30px; min-height: 30px; background-color: #fff; border: 1px solid rgba(191,191,191,.5); border-radius: 50%; margin-right: 7px; }
+.site-wrap .site-list .ico > img { border: 0;}
+.site-wrap .site-list .tit { color: #000; font-size: .813rem; line-height: .938rem; letter-spacing: -.5px; font-weight: 500; word-break: keep-all; }
