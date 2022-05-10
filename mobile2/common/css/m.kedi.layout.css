@@ -837,8 +837,9 @@ body.navbar-open .navbar-side { transform: translateZ(0); opacity: 1; visibility
 #footer .footer-inner .footer-sns .is a { background-position: -63px -25px; }
 #footer .footer-inner .footer-sns .yt a { background-position: -99px -25px; }
 #footer .footer-inner .footer-addr { padding: 8px 20px 0; }
-#footer .footer-inner .footer-addr address { color: #000; font-size: .75rem; line-height: 1; margin: 0; }
+#footer .footer-inner .footer-addr address { color: #000; font-size: .75rem; line-height: 1; margin: 0; position: relative; }
+#footer .footer-inner .footer-addr address .a11y { position: absolute; width: 32px; height: 23px; top: 50%; right: 0; margin-top: -12px; }
+#footer .footer-inner .footer-addr address .a11y > img { width: auto; height: 23px; }
 #footer .footer-inner .footer-addr .contact { color: #000; font-size: .75rem; line-height: 1; margin: 6px 0 0; white-space: nowrap; }
 #footer .footer-inner .footer-addr .copy { color: #999; font-size: .625rem; line-height: 1; margin: 6px 0 0; }
-
 /* //2022 New Main */
